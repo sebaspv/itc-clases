@@ -26,11 +26,7 @@ def print_maze(maze):
         print(' '.join(row))
 
 def clear_screen():
-    if os.name == 'posix':
-        os.system('clear')
-    else:
-        os.system('cls')
-
+    os.system('clear')
 def print_maze_with_player(maze, player_pos):
     maze_with_player = [row[:] for row in maze]
     y, x = player_pos
