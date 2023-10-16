@@ -1,6 +1,7 @@
 import os
 import random
 import tkinter as tk
+from collections import deque
 
 while True:
     dificultad=(input("Selecciona la difícultad: 1 para fácil, 2 para normal y 3 para difícil: "))
@@ -37,7 +38,6 @@ def generate_maze(rows, cols):
 
     return maze
 
-import tkinter as tk
 
 def move_player(maze, player_pos, direction):
     y, x = player_pos
@@ -72,9 +72,36 @@ def print_maze_with_player():
     if player_pos == (2 * rows, 2 * cols - 1):
         print("¡Has llegado a la salida!")
         print(f"Número de movimientos realizados: {move_count}")
-        optimal_moves = abs(player_pos[0] - start_pos[0]) + abs(player_pos[1] - start_pos[1])
-        print(f"Cantidad óptima de movimientos: {int(optimal_moves*1.5)}")
+        optimal_moves = bfs_optimal_moves(maze, start_pos, (2 * rows, 2 * cols - 1))
+        print(f"Cantidad óptima de movimientos: {optimal_moves}")
+        if optimal_moves == move_count:
+            print("Felicidades! Resolviste el laberinto en la menor cantidad de movimientos posibles")
+        else:
+            print("Intenta resolver el laberinto en la menor cantidad de movimientos posibles!")
         window.destroy()
+
+def bfs_optimal_moves(maze, start, target):
+    queue = deque([(start, 0)])
+    visited = set()
+
+    while queue:
+        (y, x), moves = queue.popleft()
+
+        if (y, x) == target:
+            return moves
+
+        if (y, x) in visited:
+            continue
+
+        visited.add((y, x))
+
+        for dy, dx in DIRECTIONS.values():
+            ny, nx = y + dy, x + dx
+
+            if 0 <= ny < len(maze) and 0 <= nx < len(maze[0]) and maze[ny][nx] == ' ' and (ny, nx) not in visited:
+                queue.append(((ny, nx), moves + 1))
+
+    return float('inf')
 
 rows, cols = dificultad, dificultad
 maze = generate_maze(rows, cols)
