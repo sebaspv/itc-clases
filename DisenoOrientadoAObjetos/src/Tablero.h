@@ -3,7 +3,7 @@
 
 class Tablero{
     public:
-        Tablero(int, int);
+        Tablero(int, int, int);
         std::vector<char> tablerojuego;
         int Casilla(int);
         bool ended;

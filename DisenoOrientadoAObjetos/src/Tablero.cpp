@@ -4,9 +4,9 @@
 #include <time.h>
 
 
-Tablero::Tablero(int casillasL, int casillasS){
+Tablero::Tablero(int casillasL, int casillasS, int casillasT){
     ended = false;
-    std::vector<char> juego(30, 'N'); // Tamano 30, se rellena por default con N
+    std::vector<char> juego(casillasT, 'N'); // Tamano 30, se rellena por default con N
     std::srand(time(0));
     for (int i = 0; i < casillasL; i++){
         int randomCasilla = rand()%juego.size();

@@ -1,0 +1,67 @@
+Enter C to continue playing and E to end the game at any turn:
+1 1 1 6 N 8
+
+2 N N N N N 
+N 1 L S N N 
+N N N N L N 
+N S N N N N 
+N N L N N N 
+
+2 2 1 6 N 8
+
+N N N N N N 
+N 1 L S N N 
+N N N N L N 
+N S N N N N 
+N N L N N N 
+
+3 1 8 6 N 15
+
+N N N N N N 
+N 2 L S N N 
+N N 1 N L N 
+N S N N N N 
+N N L N N N 
+
+4 2 8 6 N 15
+
+N N N N N N 
+N S L S N N 
+N N 1 N L N 
+N S N N N N 
+N N L N N N 
+
+5 1 15 6 N 22
+
+N N N N N N 
+N S L S N N 
+N N 2 N L N 
+N S N 1 N N 
+N N L N N N 
+
+6 2 15 6 N 22
+
+N N N N N N 
+N S L S N N 
+N N N N L N 
+N S N 1 N N 
+N N L N N N 
+
+7 1 22 6 N 29
+
+N N N N N N 
+N S L S N N 
+N N N N L N 
+N S N 2 N N 
+N N L N 1 N 
+
+8 2 22 6 N 29
+
+N N N N N N 
+N S L S N N 
+N N N N L N 
+N S N N N N 
+N N L N 1 N 
+
+--GAME OVER--
+Player number 1 wins

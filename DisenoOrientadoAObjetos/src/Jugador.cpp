@@ -6,10 +6,5 @@ Jugador::Jugador(int identificador){
 }
 
 void Jugador::mover(int nuevapos){
-    if (posicion + nuevapos < 0){
-        posicion = 0;
-    }
-    else {
-        posicion+=nuevapos; // Nos trasladamos a otra casilla
-    }
+    posicion+=nuevapos;
 }
