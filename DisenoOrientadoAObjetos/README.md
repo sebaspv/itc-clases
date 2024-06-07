@@ -1,4 +1,4 @@
-# Snakes and Ladders - Tarea 1
+# Snakes and Ladders - Tarea 2
 ## Sebastian Ponce
 
 Ejecutar el programa:
