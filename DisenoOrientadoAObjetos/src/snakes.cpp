@@ -14,9 +14,9 @@ class MyGame{
             int ladders = 3;
             int penalty = -3;
             int reward = 3;
-            int players = 2;
+            int players = 5;
             int turns = 20;
-            std::string gametype = "M";
+            std::string gametype = "A";
             SpecialScore puntos(penalty, reward);
             Tablero tableroDeJuego(ladders, snakes, tiles);
             agame.especiales = puntos;
