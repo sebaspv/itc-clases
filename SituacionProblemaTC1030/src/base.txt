@@ -1,18 +1,17 @@
 3
 2 Fight Club
-3 5
+3 5 160
 2 Star Wars
-2 4
+2 4 200
 1 Ghostbusters
-1 5
+1 5 140
 2
 4 The Big Bang Theory
 3
-3 The Paintball Scattering
-3 The Propagation Proposition
-3 The Confirmation Polarization
-5 5
+3 The Paintball Scattering 20 1 1 3
+3 The Propagation Proposition 20 1 2 5
+3 The Confirmation Polarization 20 1 2 4
 2 Young Sheldon
 2
-1 Memoir
-1 Funeral
+1 Memoir 20 7 1 5
+1 Funeral 20 7 1 4

@@ -2,6 +2,8 @@
 #include <cstdio>
 #include <string>
 #include <vector>
+#include "Pelicula.cpp"
+#include "Serie.cpp"
 
 using namespace std;
 
@@ -44,5 +46,7 @@ int main(){
         }
         cout << "\n";
     }
+
+    
     return 0;
 }
